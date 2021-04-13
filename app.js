@@ -10,7 +10,7 @@ function monitor (params) {
   })
     .then(res => {
       if (res.body.includes('id="buy-now-button"')) {
-        console.log('ps5有货了，赶快抢购')
+        console.log(`${params.title}${params.yesText}`)
         const msg = {
           msgtype: 'link',
           link: {
