@@ -1,5 +1,5 @@
 const got = require('got')
-const { us, jp, uk } = require('./config/url')
+const { us, jp, uk, de } = require('./config/url')
 const { ding } = require('./ding')
 function monitor (params) {
   got(params.url, {
@@ -21,7 +21,7 @@ function monitor (params) {
         }
         ding(msg)
       } else {
-        console.log('ps5没货')
+        console.log(`${params.text}ps5没货`)
       }
     })
     .catch(err => {
@@ -33,6 +33,7 @@ function main () {
   monitor(us)
   monitor(jp)
   monitor(uk)
+  monitor(de)
 }
 
 module.exports = {
