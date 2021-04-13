@@ -33,7 +33,7 @@ function main () {
   monitor(us)
   monitor(jp)
 }
-main()
-// module.exports = {
-//   main
-// }
+
+module.exports = {
+  main
+}
