@@ -1,5 +1,6 @@
 const got = require('got')
-const { us, jp, uk, de } = require('./config/url')
+const ps5 = require('./config/ps5')
+const xbox = require('./config/xbox')
 const { ding } = require('./ding')
 function monitor (params) {
   got(params.url, {
@@ -13,15 +14,15 @@ function monitor (params) {
         const msg = {
           msgtype: 'link',
           link: {
-            title: params.text,
-            text: 'ps5有货了，赶快抢购',
-            picUrl: 'https://ftp.bmp.ovh/imgs/2021/04/93181c6f1b3c0568.jpg',
+            title: params.title,
+            text: params.yesText,
+            picUrl: params.img,
             messageUrl: params.url
           }
         }
         ding(msg)
       } else {
-        console.log(`${params.text}ps5没货`)
+        console.log(`${params.title}${params.noText}`)
       }
     })
     .catch(err => {
@@ -30,10 +31,14 @@ function monitor (params) {
 }
 
 function main () {
-  monitor(us)
-  monitor(jp)
-  monitor(uk)
-  monitor(de)
+  monitor(ps5.us)
+  monitor(ps5.jp)
+  monitor(ps5.uk)
+  monitor(ps5.de)
+  monitor(xbox.us)
+  monitor(xbox.jp)
+  monitor(xbox.uk)
+  monitor(xbox.de)
 }
 
 module.exports = {
