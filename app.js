@@ -1,7 +1,6 @@
 const got = require('got')
-const { us, jp } = require('./config/url')
+const { us, jp, uk } = require('./config/url')
 const { ding } = require('./ding')
-
 function monitor (params) {
   got(params.url, {
     headers: {
@@ -10,6 +9,7 @@ function monitor (params) {
   })
     .then(res => {
       if (res.body.includes('id="buy-now-button"')) {
+        console.log('ps5有货了，赶快抢购')
         const msg = {
           msgtype: 'link',
           link: {
@@ -32,6 +32,7 @@ function monitor (params) {
 function main () {
   monitor(us)
   monitor(jp)
+  monitor(uk)
 }
 
 module.exports = {
