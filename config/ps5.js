@@ -33,5 +33,12 @@ module.exports = {
     yesText: 'ps5有货了，赶快抢购',
     noText: 'ps5没货',
     img: 'https://ftp.bmp.ovh/imgs/2021/04/93181c6f1b3c0568.jpg'
+  },
+  rakuten_jp: {
+    url: 'https://books.rakuten.co.jp/rb/16462859/?bkts=1&s-id=bk_sp_item_image_n',
+    title: '日本乐天',
+    yesText: 'ps5有货了，赶快抢购',
+    noText: 'ps5没货',
+    img: 'https://ftp.bmp.ovh/imgs/2021/04/93181c6f1b3c0568.jpg'
   }
 }

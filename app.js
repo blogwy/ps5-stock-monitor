@@ -2,14 +2,14 @@ const got = require('got')
 const ps5 = require('./config/ps5')
 const xbox = require('./config/xbox')
 const { ding } = require('./ding')
-function monitor (params) {
+const rule = require('./config/rule')
+const headers = require('./config/headers')
+function monitor (params, type) {
   got(params.url, {
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36'
-    }
+    headers: headers[type]
   })
     .then(res => {
-      if (res.body.includes('id="buy-now-button"')) {
+      if (res.body.includes(rule[type])) {
         console.log(`${params.title}${params.yesText}`)
         const msg = {
           msgtype: 'link',
@@ -31,16 +31,17 @@ function monitor (params) {
 }
 
 function main () {
-  monitor(ps5.us)
-  monitor(ps5.jp)
-  monitor(ps5.uk)
-  monitor(ps5.de)
-  monitor(ps5.au)
-  monitor(xbox.us)
-  monitor(xbox.jp)
-  monitor(xbox.uk)
-  monitor(xbox.de)
-  monitor(xbox.au)
+  monitor(ps5.us, 'amazon')
+  monitor(ps5.jp, 'amazon')
+  monitor(ps5.uk, 'amazon')
+  monitor(ps5.de, 'amazon')
+  monitor(ps5.au, 'amazon')
+  monitor(ps5.rakuten_jp, 'rakuten')
+  monitor(xbox.us, 'amazon')
+  monitor(xbox.jp, 'amazon')
+  monitor(xbox.uk, 'amazon')
+  monitor(xbox.de, 'amazon')
+  monitor(xbox.au, 'amazon')
 }
 
 module.exports = {
