@@ -31,6 +31,8 @@
 
 [https://www.amazon.de/Sony-Interactive-Entertainment-PlayStation-5/dp/B08H93ZRK9/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=G2O8GVGP0J4N&dchild=1&keywords=ps5+console&qid=1618294801&sprefix=ps5+con%2Caps%2C373&sr=8-2](https://www.amazon.de/Sony-Interactive-Entertainment-PlayStation-5/dp/B08H93ZRK9/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=G2O8GVGP0J4N&dchild=1&keywords=ps5+console&qid=1618294801&sprefix=ps5+con%2Caps%2C373&sr=8-2)
 
+[https://www.amazon.com.au/PlayStation-5-Console/dp/B08HHV8945/ref=sr_1_1?dchild=1&qid=1618372398&rd=1&s=videogames&sr=1-1](https://www.amazon.com.au/PlayStation-5-Console/dp/B08HHV8945/ref=sr_1_1?dchild=1&qid=1618372398&rd=1&s=videogames&sr=1-1)
+
 ### XBOX
 
 [https://www.amazon.com/Xbox-X/dp/B08H75RTZ8/ref=sr_1_2?crid=3HIR65ZUUB8E9&dchild=1&keywords=xbox+series+x&qid=1618312164&s=videogames&sprefix=xbox%2Cvideogames%2C530&sr=1-2](https://www.amazon.com/Xbox-X/dp/B08H75RTZ8/ref=sr_1_2?crid=3HIR65ZUUB8E9&dchild=1&keywords=xbox+series+x&qid=1618312164&s=videogames&sprefix=xbox%2Cvideogames%2C530&sr=1-2)
@@ -40,3 +42,5 @@
 [https://www.amazon.co.uk/Xbox-RRT-00007-Series-X/dp/B08H93GKNJ/ref=sr_1_1?crid=11FWH55N54CQJ&dchild=1&keywords=xbox+series+x&qid=1618312344&sprefix=xbox%2Caps%2C530&sr=8-1](https://www.amazon.co.uk/Xbox-RRT-00007-Series-X/dp/B08H93GKNJ/ref=sr_1_1?crid=11FWH55N54CQJ&dchild=1&keywords=xbox+series+x&qid=1618312344&sprefix=xbox%2Caps%2C530&sr=8-1)
 
 [https://www.amazon.de/Microsoft-RRT-00009-Xbox-Series-1TB/dp/B08LNTDL5S/ref=sr_1_1?crid=1213BVOFZ5CTJ&dchild=1&ie=UTF8&keywords=xbox%2Bseries%2Bx&language=en_GB&qid=1618312410&sprefix=xbox%2Caps%2C713&sr=8-1&th=1](https://www.amazon.de/Microsoft-RRT-00009-Xbox-Series-1TB/dp/B08LNTDL5S/ref=sr_1_1?crid=1213BVOFZ5CTJ&dchild=1&ie=UTF8&keywords=xbox%2Bseries%2Bx&language=en_GB&qid=1618312410&sprefix=xbox%2Caps%2C713&sr=8-1&th=1)
+
+[https://www.amazon.com.au/Microsoft-RRT-00021-Xbox-Series-Console/dp/B08HLW5TDS/ref=sr_1_3?dchild=1&qid=1618372458&rd=1&s=videogames&sr=1-3](https://www.amazon.com.au/Microsoft-RRT-00021-Xbox-Series-Console/dp/B08HLW5TDS/ref=sr_1_3?dchild=1&qid=1618372458&rd=1&s=videogames&sr=1-3)
