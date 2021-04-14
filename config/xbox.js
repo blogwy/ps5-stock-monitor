@@ -26,5 +26,12 @@ module.exports = {
     text: 'xbox有货了，赶快抢购',
     noText: 'xbox没货',
     img: 'https://ftp.bmp.ovh/imgs/2021/04/206cda23f50481f0.jpg'
+  },
+  au: {
+    url: 'https://www.amazon.com.au/Microsoft-RRT-00021-Xbox-Series-Console/dp/B08HLW5TDS/ref=sr_1_3?dchild=1&qid=1618372458&rd=1&s=videogames&sr=1-3',
+    title: '澳亚',
+    text: 'xbox有货了，赶快抢购',
+    noText: 'xbox没货',
+    img: 'https://ftp.bmp.ovh/imgs/2021/04/206cda23f50481f0.jpg'
   }
 }

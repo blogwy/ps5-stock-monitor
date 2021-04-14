@@ -35,10 +35,12 @@ function main () {
   monitor(ps5.jp)
   monitor(ps5.uk)
   monitor(ps5.de)
+  monitor(ps5.au)
   monitor(xbox.us)
   monitor(xbox.jp)
   monitor(xbox.uk)
   monitor(xbox.de)
+  monitor(xbox.au)
 }
 
 module.exports = {

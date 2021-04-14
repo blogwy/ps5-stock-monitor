@@ -26,5 +26,12 @@ module.exports = {
     yesText: 'ps5有货了，赶快抢购',
     noText: 'ps5没货',
     img: 'https://ftp.bmp.ovh/imgs/2021/04/93181c6f1b3c0568.jpg'
+  },
+  au: {
+    url: 'https://www.amazon.com.au/PlayStation-5-Console/dp/B08HHV8945/ref=sr_1_1?dchild=1&qid=1618372398&rd=1&s=videogames&sr=1-1',
+    title: '澳亚',
+    yesText: 'ps5有货了，赶快抢购',
+    noText: 'ps5没货',
+    img: 'https://ftp.bmp.ovh/imgs/2021/04/93181c6f1b3c0568.jpg'
   }
 }
