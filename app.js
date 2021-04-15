@@ -5,7 +5,8 @@ const { ding } = require('./ding')
 const rule = require('./config/rule')
 const headers = require('./config/headers')
 const logger = require('./log')
-const loggerServer = require('./log/server')
+// 开启log服务
+require('./log/server')
 function monitor (params, type) {
   got(params.url, {
     headers: headers[type]
@@ -51,7 +52,12 @@ function main () {
   monitor(xbox.au, 'amazon')
 }
 
-// 开始定时任务
+// 开始定时任务，docker/自己本地测试请使用自定义定时器
 setInterval(() => {
   main()
 }, 1000 * 60);
+
+// serverless服务使用下面代码导出函数
+module.exports = {
+  main
+}
