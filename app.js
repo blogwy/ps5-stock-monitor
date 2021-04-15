@@ -4,6 +4,8 @@ const xbox = require('./config/xbox')
 const { ding } = require('./ding')
 const rule = require('./config/rule')
 const headers = require('./config/headers')
+const logger = require('./log')
+const loggerServer = require('./log/server')
 function monitor (params, type) {
   got(params.url, {
     headers: headers[type]
@@ -11,6 +13,7 @@ function monitor (params, type) {
     .then(res => {
       if (res.body.includes(rule[type])) {
         console.log(`${params.title}${params.yesText}`)
+        logger.info(`${params.title}${params.yesText}`)
         const msg = {
           msgtype: 'link',
           link: {
@@ -23,10 +26,14 @@ function monitor (params, type) {
         ding(msg)
       } else {
         console.log(`${params.title}${params.noText}`)
+        logger.info(`${params.title}${params.noText}`)
       }
     })
     .catch(err => {
+      console.log('请求页面失败')
       console.log(err)
+      logger.error('请求页面失败')
+      logger.error(err)
     })
 }
 
@@ -44,6 +51,7 @@ function main () {
   monitor(xbox.au, 'amazon')
 }
 
-module.exports = {
-  main
-}
+// 开始定时任务
+setInterval(() => {
+  main()
+}, 1000 * 60);

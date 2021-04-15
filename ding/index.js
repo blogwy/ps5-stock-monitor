@@ -1,6 +1,7 @@
 const sign = require('./sign')
 const got = require('got')
 const { secret, access_token } = require('../config/secret')
+const logger = require('../log')
 
 function ding (message) {
   const url = 'https://oapi.dingtalk.com/robot/send'
@@ -20,11 +21,14 @@ function ding (message) {
     json: message
   })
     .then(res => {
-      console.log('success')
+      console.log('钉钉发送成功')
+      logger.info('钉钉发送成功')
     })
     .catch(err =>  {
-      console.log('error')
+      console.log('钉钉发送失败')
       console.log(err)
+      logger.error('钉钉发送失败')
+      logger.error(err)
     })
 }
 
