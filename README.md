@@ -9,6 +9,16 @@
 
 首先创建一个钉钉群，添加一个自定义机器人。机器人开启消息推送，安全选择加签即可。记录下机器人的`access_token`和`secret`，然后在`config/secret.js`文件里面填入你的钉钉群`secret`和`access_token`，支持本地运行，docker容器部署，serverless云函数方式部署(不同部署方式都需要修改代码，具体请看项目入口文件`app.js`)
 
+## docker部署
+
+```bash
+docker image build -t ps5-stock-monitor:v1.0.0 .
+
+docker container run -e TZ="Asia/Shanghai" -p 8000:3000 ps5-stock-monitor:v1.0.0
+```
+
+docker部署后，浏览器打开`http://localhost:8000/log.log`即可查看运行日志
+
 ## 监控数据
 
 ### PS5
