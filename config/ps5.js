@@ -34,9 +34,9 @@ module.exports = {
     noText: 'ps5没货',
     img: 'https://ftp.bmp.ovh/imgs/2021/04/93181c6f1b3c0568.jpg'
   },
-  rakuten_jp: {
-    url: 'https://books.rakuten.co.jp/rb/16462859/?bkts=1&s-id=bk_sp_item_image_n',
-    title: '日本乐天',
+  test: {
+    url: 'https://www.amazon.com.au/Marvels-Spider-Man-Morales-Ultimate-PlayStation/dp/B08JVDK2TN/ref=sr_1_8?crid=2L6E1ISW3M154&dchild=1&keywords=ps5&qid=1618549102&sprefix=ps5%2Caps%2C337&sr=8-8',
+    title: '测试',
     yesText: 'ps5有货了，赶快抢购',
     noText: 'ps5没货',
     img: 'https://ftp.bmp.ovh/imgs/2021/04/93181c6f1b3c0568.jpg'

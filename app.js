@@ -12,7 +12,7 @@ function monitor (params, type) {
     headers: headers[type]
   })
     .then(res => {
-      if (res.body.includes(rule[type])) {
+      if (res.body.includes(rule['amazon'])) {
         console.log(`${params.title}${params.yesText}`)
         logger.info(`${params.title}${params.yesText}`)
         const msg = {
@@ -39,17 +39,16 @@ function monitor (params, type) {
 }
 
 function main () {
-  monitor(ps5.us, 'amazon')
-  monitor(ps5.jp, 'amazon')
-  monitor(ps5.uk, 'amazon')
-  monitor(ps5.de, 'amazon')
-  monitor(ps5.au, 'amazon')
-  monitor(ps5.rakuten_jp, 'rakuten')
-  monitor(xbox.us, 'amazon')
-  monitor(xbox.jp, 'amazon')
-  monitor(xbox.uk, 'amazon')
-  monitor(xbox.de, 'amazon')
-  monitor(xbox.au, 'amazon')
+  monitor(ps5.us, 'us')
+  monitor(ps5.jp, 'jp')
+  monitor(ps5.uk, 'uk')
+  monitor(ps5.de, 'de')
+  monitor(ps5.au, 'au')
+  monitor(xbox.us, 'us')
+  monitor(xbox.jp, 'jp')
+  monitor(xbox.uk, 'uk')
+  monitor(xbox.de, 'de')
+  monitor(xbox.au, 'au')
 }
 
 // 开始定时任务，docker/自己本地测试请使用自定义定时器

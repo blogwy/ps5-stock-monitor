@@ -1,9 +1,24 @@
+const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36'
+
 module.exports = {
-  amazon: {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36',
+  us: {
+    'User-Agent': UA,
+    'cookie': 'ubid-main=132-2207295-5151818; sst-main=Sst1|PQE8y9vZN_GtsC5WWYyXaOrVCWNunXg3ld52nWV39CDx-66FJ1m8YOyqIgl05WpzDZIhByEuBRx3VrXapvhIV5uU8FqxBMegRjNUEfG2gxDxpDfU0SPdl6_GGWWPbpc0Hm4LJ-_VLOlsR3PE0wCRck4NKxuFnYWsZH19y_Kl1v_OEO-KqxEaJSF8h3CK855PDwAb56KA2X75-QCPpokDL0p0NQVvG57pwyr5Z5fO1fZLbwzOWz4A4uG14vXgGA9A6FN73Z0EGhH1jj8FCruKzly4lRtmgmHfYHMYFWTmDAeZvrk; skin=noskin; session-id=134-4175999-3177649; session-id-time=2082787201l; i18n-prefs=USD; session-token=u3ZWWyGdoS2HgHJQ+WS+wXX0JWq+qHhOFCOMcCJafeLhZoD4XOVGbeCF8WxSNc+kio5RltgS73FsEykp+AEmwQfWo1+aENo694DSIQbQl78p44VnTfX5dLt3Z9A0LEn924itkR5WjkP0ZnpQTr1ajb2cqHHN5heYWK2xJyWANBLorCLk9jwruOkU6hk8QDzp; csm-hit=tb:s-2VV81E1ZEK75PJKM85A7|1618546320210&t:1618546322997&adb:adblk_yes'
   },
-  rakuten: {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36',
-    'cookie': '_ra=1618399420418|3ba2c5a0-eb06-41d8-9f10-21dac42f9c4e; _gcl_books_general_all_au=1.4.1194633826.1618399422; __lt__cid=d79db05a-0c41-4f80-abe4-5d6b6b8016d4; rmStore=tmid:; Rp=1528cbc284a1546025f731f6746076d0bebb6eb; _fbp=fb.2.1618399429077.941731548; BooksOEM=RBOOKS; ak_bmsc=B9913EC4F37510ED9CE70951F2C20A6845C0DA5E89340000E8057760732DC705~plbXe2jkF2nxDEHokCUiNvW+SN978ioiNFEXrEF5QFOlugv1b0D9fM/GLXmQ+rJ0j5FlN3APKYQ96sCoVRjDuR67gXdIAu/jaauS+qZjVWnMQtrWmo1fZugzRI0cKYMtC18djzRp2kgv98P7E/tZXFMaMaMgJzQmY9y0VoEG1O3pbJ4vDTmrlZoo84j8QzskW6cFNpnR2wEI2uKVVzzm8nvwOSKqeRgnYFMSaqvacIHlkYFV83q9OPH47qM2KrmDp2; __lt__sid=0f1eae11-a90fffc3; Bt=1618413051; rat_v=4c3709adcd237783d02492ba0607705fe9d2af; bPzd=ghid006%3D006513007005%2C006513007005%2C006515001%2C006513007005%2C006513007005%3Aghid%3D006513007005%2C006513007005%2C006515001%2C006513007005%2C006513007005; Re=26.1.1.0.0.568376.3:26.5.3.0.0.566408.5-26.1.1.0.0.568376.3:26.5.3.0.0.566408.5; bm_sv=934DEB8EBF949C9A7A99905EAB699511~yqQqhLLCOhoxMQuoTpddRagq3xIZIpi1kqJOXUscPqxCiRZBb0oXRyxox6AMrN4NmhmYm1biZEPssUKilphOgKf11qUmqckgdaLFzyyqe1vSeVdlJyOh1xvs40ErRgNClLy1+rGL6GMOdgwjAWeAkCxpmc/l9NaMxPVIunIyyTc='
+  uk: {
+    'User-Agent': UA,
+    'cookie': 'session-id=261-2978601-9406433; i18n-prefs=GBP; ubid-acbuk=260-7673067-8865833; session-token=pmbbqV3a0UeEUzESqhDoogQbS5ezyFtqDsFodo6Ou4MhWi/pP/RVABHVT3w5cCuUr+VVzkYZ9sUYEgoGPa8hB8SyWIdHV8ky8igHHv3lvhMOhBvytZvS/Et/fJAxZWbiz02upeuQqpDKPqReJq3wwPx/kG7zMlqK/VwaPnjJPWX4Zo+UlUgkUb9vasVVLey0; csm-hit=tb:s-A35SW2879GW1MWQJQ7FD|1618547775815&t:1618547777028&adb:adblk_yes; session-id-time=2082758401l'
+  },
+  jp: {
+    'User-Agent': UA,
+    'cookie': 'session-id=357-0398494-5327344; ubid-acbjp=358-9327562-6657246; i18n-prefs=JPY; lc-acbjp=zh_CN; skin=noskin; session-token=PHgBImXk8PUJzmydTNOKPBQYw+xyxy7ee74Z6Bb+XfZbnsUZ5fey2XS9JZn6b3R3vLRfj0IX89v9UJMqGq96dxm67wUZ8clttMimgwGbhLDm7k3su/WiJOnMsD/AlUxj+PBhKfSKxe7UOBYnAsjQvuztrod4lyNO+HN0XelB0f0YFKWBWKpIjOUG9YhheZ80; csm-hit=tb:s-ACG0EZPF47ZP2P4JQDC8|1618548388063&t:1618548389045&adb:adblk_yes; session-id-time=2082726001l'
+  },
+  de: {
+    'User-Agent': UA,
+    'cookie': 'session-id=261-6284385-8654726; ubid-acbde=259-6103937-0072513; session-token=V/RLf/yPet9lQwCcLZ0I14NuHfyTagR3XBCJecdZNCUWelLWWUQP8GogBPbEDr3iDKQiHt3rGbyaog5LTcPhaA70yvQompZB9HsfD1tsoWRzTtZpu7vdPLev4SVclRNFt/JSgsXRAp7lqQ31MOME5mTSIuSVN1zFEZ4aB+IXh9H3KsqTRTrM6DfbS+JD54Zw; lc-acbde=en_GB; i18n-prefs=EUR; session-id-time=2082754801l; csm-hit=adb:adblk_yes&t:1618548081717&tb:SGNSEKCA2MZKN68CG0XX+s-2DN28R6YNA5MSAMKFZ58|1618548081717'
+  },
+  au: {
+    'User-Agent': UA,
+    'cookie': 'session-id=355-9990501-0093450; i18n-prefs=AUD; ubid-acbau=358-0058086-1821671; session-token=g1+xgD8WqRFkvYEfA0N97uST0xZMubfOlvW9ux6Whh3pTkkgbYErSHc0DDK08zw06yIXX+Udf3vmeahFiv3Z03vSGSA5yvUHYhg+rX1pIgucK9DReZyEFRKe7b73G7PZwSzyO96WBnm52BaFFTkAiwyuCRzoVTKAXGKgfq1PpL7xdRdotIO3v+W6+1iHZ4Ro; session-id-time=2082758401l; csm-hit=tb:ZGQ1MNGE9A8VBV0XYHSE+s-AJE7DAXN3DC00GVCW6P0|1618548239839&t:1618548239839&adb:adblk_yes'
   }
 }
